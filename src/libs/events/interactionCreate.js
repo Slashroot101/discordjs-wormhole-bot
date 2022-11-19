@@ -6,6 +6,6 @@ module.exports = async (interaction, user) => {
 
         await command.execute(interaction, user);
     } catch (err) {
-        logger.err(err, 'An error occured executing a command');
+        logger.error(err, 'An error occured executing a command');
     }
 };
